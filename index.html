@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+<h1>Computer Quiz</h1>
+<div id="container">
+
+    <form action="/" id="form" method="post" name="quiz">
+        
+        <div class="input">
+            <p>Q1) Who invented Computer?</p> 
+            <input type="button" value="Newton" id="Newton" class="wrong" name="ans1" onclick="quiz.place_for_ans1.value = 'Newton'">
+            <input type="button" value="Charles" id="Charles" class="right" name="ans1" onclick="quiz.place_for_ans1.value = 'Charles'">
+            <input type="button" value="Stephen" id="Stephen" class="wrong" name="ans1" onclick="quiz.place_for_ans1.value = 'Stephen'">
+            <input type="button" value="Einstien" id="Einstien" class="wrong" name="ans1" onclick="quiz.place_for_ans1.value = 'Einstien'"><br>
+            <input type="text" id="place_for_ans1" name="ans_of_ans1" value=" ">
+            <br>
+        </div>
+
+        <div class="input">
+            <p>Q2) Who created python language?</p>
+            <div class="option">
+                <input type="button" value="Brendan" id="Brendan" class="wrong" name="ans1" onclick="quiz.place_for_ans2.value = 'Brendan'">
+                <input type="button" value="Dennis" id="Dennis" class="wrong" name="ans1" onclick="quiz.place_for_ans2.value = 'Dennis'">
+                <input type="button" value="Guido" id="Guido" class="right" name="ans1" onclick="quiz.place_for_ans2.value = 'Guido'">
+                <input type="button" value="James" id="James" class="wrong" name="ans1" onclick="quiz.place_for_ans2.value = 'James'"> <br>
+                <input type="text" id="place_for_ans2" name="ans_of_ans2" value=" ">
+                <br>
+            </div>
+        </div>
+
+        <div class="input">
+            <p>Q3) Who created Javascript language?</p>
+            <div class="option">
+                <input type="button" value="Guido" id="Guido" class="wrong" name="ans1" onclick="quiz.place_for_ans3.value = 'Guido'">
+                <input type="button" value="Dennis" id="Dennis" class="wrong" name="ans1" onclick="quiz.place_for_ans3.value = 'Dennis'">
+                <input type="button" value="James" id="James" class="wrong" name="ans1" onclick="quiz.place_for_ans3.value = 'James'"> 
+                <input type="button" value="Brendan" id="Brendan" class="right" name="ans1" onclick="quiz.place_for_ans3.value = 'Brendan'"><br>
+                <input type="text" id="place_for_ans3" name="ans_of_ans3" value=" ">
+                <br>
+            </div>
+        </div>
+
+        <div class="input">
+            <p>Q4) Who created Java language?</p>
+            <div class="option">
+                <input type="button" value="Guido" id="Guido" class="wrong" name="ans1" onclick="quiz.place_for_ans4.value = 'Guido'">
+                <input type="button" value="Dennis" id="Dennis" class="wrong" name="ans1" onclick="quiz.place_for_ans4.value = 'Dennis'">
+                <input type="button" value="James" id="James" class="right" name="ans1" onclick="quiz.place_for_ans4.value = 'James'"> 
+                <input type="button" value="Brendan" id="Brendan" class="wrong" name="ans1" onclick="quiz.place_for_ans4.value = 'Brendan'"> <br>
+                <input type="text" id="place_for_ans4" name="ans_of_ans4" value=" ">
+                <br>
+            </div>
+        </div>
+        
+        <div class="input">
+            <p>Q5) Who created C language?</p>
+            <div class="option">
+                <input type="button" value="Guido" id="Guido" class="wrong" name="ans1" onclick="quiz.place_for_ans5.value = 'Guido'">
+                <input type="button" value="Dennis" id="Dennis" class="right" name="ans1" onclick="quiz.place_for_ans5.value = 'Dennis'">
+                <input type="button" value="Brendan" id="Brendan" class="wrong" name="ans1" onclick="quiz.place_for_ans5.value = 'Brendan'">
+                <input type="button" value="James" id="James" class="wrong" name="ans1" onclick="quiz.place_for_ans5.value = 'James'"> <br>
+                <input type="text" id="place_for_ans5" name="ans_of_ans5" value=" ">
+                <br>
+            </div>
+        </div>
+        <div>
+            <input type="text" id="name" name="identity" placeholder="Enter your Name">
+            <p id="result" name='result'>Know your result</p>
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+</div>
+    
+    <script src="index.js"></script>
+</body>
+
+</html>
